@@ -1,0 +1,31 @@
+{
+  "failed_device_ids": [],
+  "source_device_id": 1,
+  "omega_Theta": 67,
+  "protocol_policy": "joint",
+  "memory_policy": "esp32_psram",
+  "solver": {
+    "time_limit": 60.0,
+    "mip_rel_gap": 0.0,
+    "presolve": true
+  },
+  "input_status": "MODEL_DERIVED_WITH_EXPLICIT_RUNTIME_ASSUMPTIONS",
+  "counting_convention": "Converted TFLite operators for both omega_k and omega_Theta; not Keras layers",
+  "notes": [
+    "D=K scaled partition uses the 67-operator INT8 MobileNetV2 candidate profile.",
+    "Initial partition optimized by DP for the recorded fixed device-type order; replica recovery is optimized separately.",
+    "Repeated device profiles and uniform per-protocol directed rates are simulation assumptions inherited from D=5.",
+    "ESP32 model storage is 1.3 MiB; ESP32 inference arena uses PSRAM; others use SRAM.",
+    "No new MCU timings, radio measurements, OTA delay or energy claims are made.",
+    "This generated sensitivity configuration supersedes any inherited uniform-rate assumption; baseline retains the source link rates. Original input files are unchanged."
+  ],
+  "esp32_model_budget_bytes": 1363148,
+  "link_rate_study": {
+    "configuration": "rate_25_seed_2028",
+    "level": 0.25,
+    "link_seed": 2028,
+    "input_status": "SYNTHETIC_LINK_RATE_SENSITIVITY",
+    "formula": "B_new(i,j,p)=B_original(i,j,p)*(1-level*u(seed,D,unordered_pair,p))",
+    "explanation": "Only link rates vary; benchmark values are anchors, not new radio measurements."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "failed_device_ids": [],
+  "source_device_id": 1,
+  "omega_Theta": 67,
+  "protocol_policy": "joint",
+  "memory_policy": "esp32_psram",
+  "solver": {
+    "time_limit": 60.0,
+    "mip_rel_gap": 0.0,
+    "presolve": true
+  },
+  "input_status": "MODEL_DERIVED_WITH_EXPLICIT_RUNTIME_ASSUMPTIONS",
+  "counting_convention": "Converted TFLite operators for both omega_k and omega_Theta; not Keras layers",
+  "notes": [
+    "Default BLE is the fixed-p formulation in the attached PDF and is compatible with all five device types. Use --protocol joint for the previously discussed extension.",
+    "The approved ESP32 PSRAM memory policy extends the SRAM-only equations in the attached PDF. Use --memory paper_sram to inspect that original constraint; the provided S1 does not fit SRAM.",
+    "Computation formula and assumed phi values are retained to isolate formulation verification. Absolute latency is not calibrated MCU performance.",
+    "No simulator, partition search, baseline algorithms, graphs, OTA/detection time, energy or packet-loss model in this first step.",
+    "This generated sensitivity configuration supersedes any inherited uniform-rate assumption; baseline retains the source link rates. Original input files are unchanged."
+  ],
+  "esp32_model_budget_bytes": 1363148,
+  "link_rate_study": {
+    "configuration": "rate_50_seed_2028",
+    "level": 0.5,
+    "link_seed": 2028,
+    "input_status": "SYNTHETIC_LINK_RATE_SENSITIVITY",
+    "formula": "B_new(i,j,p)=B_original(i,j,p)*(1-level*u(seed,D,unordered_pair,p))",
+    "explanation": "Only link rates vary; benchmark values are anchors, not new radio measurements."
+  }
+}

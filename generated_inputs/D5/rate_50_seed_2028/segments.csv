@@ -1,0 +1,6 @@
+segment_id,primary_device_id,operator_start_inclusive,operator_end_exclusive,omega_k,v_k_bytes,v_next_bytes,m_k_bytes,u_act_bytes,u_scr_bytes,u_state_bytes
+1,1,0,25,25,150528,4704,60264,752640,32768,14592
+2,2,25,51,26,4704,2744,167160,81536,32768,14848
+3,3,51,55,4,2744,2744,64048,35672,32768,9216
+4,4,55,64,9,2744,1280,327400,68208,32768,10496
+5,5,64,67,3,1280,1000,1309384,2280,32768,8960

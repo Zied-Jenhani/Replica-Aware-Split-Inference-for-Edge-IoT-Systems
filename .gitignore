@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+results/
+output/
+output_heuristics*/
+link_rate_study/
+final_figures/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+runner.lock

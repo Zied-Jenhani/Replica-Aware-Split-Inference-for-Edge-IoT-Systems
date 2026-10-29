@@ -1,0 +1,5 @@
+# Runtime dependencies; these ranges are not the original experiment lockfile.
+numpy>=1.26,<3
+scipy>=1.15.2,<2
+matplotlib>=3.8,<4
+matplot2tikz==0.5.4

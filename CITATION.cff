@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this repository when using its simulation scripts or input datasets."
+type: software
+title: "Replica-Aware Split Inference for Edge IoT Systems: Simulation Scripts and Input Data"
+authors:
+  - family-names: Jenhani
+    given-names: Zied
+repository-code: "https://github.com/Zied-Jenhani/Replica-Aware-Split-Inference-for-Edge-IoT-Systems"
+url: "https://github.com/Zied-Jenhani/Replica-Aware-Split-Inference-for-Edge-IoT-Systems"
+keywords:
+  - TinyML
+  - split inference
+  - replica placement
+  - MILP
+  - fault recovery
